@@ -4,7 +4,11 @@ import Coin from './Coin';
 import Price from './Price';
 import Chart from './Chart';
 
-function Router() {
+interface IRouterProps {
+    toggleDark: () => void;
+}
+
+function Router({ toggleDark }: IRouterProps) {
     return (
         <BrowserRouter>
             <Routes>
